@@ -1,0 +1,183 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    background: #000;
+    color: #fff;
+}
+
+h1 {
+    display: inline;
+}
+
+a {
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    float: right;
+}
+
+.main-content {
+    width: 900px;
+    margin: 20px auto;
+}
+
+.replay-btn {
+    padding: 15px 20px;
+    border: solid 1px #fff;
+    border-radius: 5px;
+}
+
+#flytrap {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 200px;
+    height: 200px;
+    background-size: 150px 150px;
+}
+
+.glow {
+    height: 250px;
+    width: 250px;
+    background: url(glow.png) no-repeat center;
+}
+
+.track {
+    position: relative;
+}
+
+img.fly {
+    top: 35%;
+    left: 45%;
+    position: absolute;
+    transform:scaleX(-1);
+    -webkit-transform: scaleX(-1);
+}
+
+.animate {
+    animation: flyFirefly 7s;
+    -webkit-animation: flyFirefly 7s;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes flyFirefly {
+    from {
+        top: 10px;
+        left: 0;
+        opacity:0;
+    }
+
+    10% {
+        top: 15px;
+        left: 15%;
+        background-size: 100% 100%;
+        opacity:1;
+    }
+
+    20% {
+        top: 25px;
+        left: 23%;
+        background-size: 100% 100%;
+    }
+
+    25% {
+        top: 5px;
+        left: 30%;
+        background-size: 75% 75%;
+    }
+
+    30% {
+        top: 10px;
+        left: 35%;
+        background-size: 90% 90%;
+    }
+
+    50% {
+        top: 120px;
+        left: 48%;
+        background-size: 120% 120%;
+    }
+
+    60% {
+        top: 80px;
+        left: 62%;
+        background-size: 100% 100%;
+    }
+
+    75% {
+        top: 150px;
+        left: 73%;
+        background-size: 85% 85%;
+        opacity: 1;
+    }
+
+    to {
+        top: 80px;
+        left: 89%;
+        opacity: 0;
+        background-size: 100% 100%;
+    }
+}
+
+@keyframes flyFirefly {
+        from {
+        top: 10px;
+        left: 0;
+        opacity:0;
+    }
+
+    10% {
+        top: 15px;
+        left: 15%;
+        background-size: 100% 100%;
+        opacity:1;
+    }
+
+    20% {
+        top: 25px;
+        left: 23%;
+        background-size: 100% 100%;
+    }
+
+    25% {
+        top: 5px;
+        left: 30%;
+        background-size: 75% 75%;
+    }
+
+    30% {
+        top: 10px;
+        left: 35%;
+        background-size: 90% 90%;
+    }
+
+    50% {
+        top: 120px;
+        left: 48%;
+        background-size: 120% 120%;
+    }
+
+    60% {
+        top: 80px;
+        left: 62%;
+        background-size: 100% 100%;
+    }
+
+    75% {
+        top: 150px;
+        left: 73%;
+        background-size: 85% 85%;
+        opacity: 1;
+    }
+
+    to {
+        top: 80px;
+        left: 89%;
+        opacity: 0;
+        background-size: 100% 100%;
+    }
+}
